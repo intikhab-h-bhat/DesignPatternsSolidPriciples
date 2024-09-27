@@ -13,3 +13,12 @@ using DesignPatternsSolidPriciples.Encapsulation;
 BankAccount account=new BankAccount(100);
 
 Console.WriteLine(account.GetBalance());
+
+
+account.Deposit(500);
+
+Console.WriteLine(account.GetBalance());
+
+account.WithDraw(150);
+
+Console.WriteLine(account.GetBalance());

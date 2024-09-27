@@ -31,5 +31,19 @@ namespace DesignPatternsSolidPriciples.Encapsulation
                
             this._balance += amount;
         }
+
+        public decimal WithDraw(decimal amount)
+        {
+            if (amount < 0)
+            {
+                throw new ArgumentException("withdrawl amount should be grater than 0");
+            }
+            if (amount > _balance) {
+                
+                throw new ArgumentException("not much available fund");
+            }
+            return this._balance -= amount;
+
+        }
     }
 }
