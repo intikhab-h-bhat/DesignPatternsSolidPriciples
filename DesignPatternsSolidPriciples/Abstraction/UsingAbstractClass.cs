@@ -8,22 +8,24 @@ namespace DesignPatternsSolidPriciples.Abstraction
 {
     public abstract class  UsingAbstractClass
     {
-        public abstract void Start();
+        public abstract void StartCar();
 
-        public  void Stop()
+        public  void StopCar()
         {
             Console.WriteLine("Stop The vehicle");
         }
 
     }
 
-    public class Car:UsingAbstractClass { 
+    public class CarType:UsingAbstractClass { 
     
-        public override void Start()
+        public override void StartCar()
         {
 
-            Console.WriteLine("Start The Vehicle");
+            Console.WriteLine("Starting Car");
         }
+
+      
     
     }
 }
