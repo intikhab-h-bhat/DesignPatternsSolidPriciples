@@ -5,12 +5,51 @@ using DesignPatternsSolidPriciples.Coupling;
 using DesignPatternsSolidPriciples.Encapsulation;
 using DesignPatternsSolidPriciples.Inheritance;
 using DesignPatternsSolidPriciples.Polymorphism;
+using DesignPatternsSolidPriciples.SOLID;
+using DesignPatternsSolidPriciples.SOLID.O;
 using System;
 
 
-Console.WriteLine(" ********************** Composition********************");
-NewCar car1= new NewCar();
-car1.StartCar();
+
+Console.WriteLine("*********************** Solid Principal****************");
+
+
+
+Rectangle c=new Rectangle();
+c.Length=4;
+c.Width=5;
+c.CalulateArea();
+
+
+
+
+// User u=new User();
+// u.UserEmail="intikhabh@gmail.com";
+
+
+// UserService us= new UserService();
+
+// us.Register(u);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Console.WriteLine(" ********************** Composition********************");
+// NewCar car1= new NewCar();
+// car1.StartCar();
 
 
 
