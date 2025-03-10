@@ -6,6 +6,8 @@ using DesignPatternsSolidPriciples.Encapsulation;
 using DesignPatternsSolidPriciples.Inheritance;
 using DesignPatternsSolidPriciples.Polymorphism;
 using DesignPatternsSolidPriciples.SOLID;
+using DesignPatternsSolidPriciples.SOLID.I;
+using DesignPatternsSolidPriciples.SOLID.L;
 using DesignPatternsSolidPriciples.SOLID.O;
 using System;
 
@@ -14,14 +16,50 @@ using System;
 Console.WriteLine("*********************** Solid Principal****************");
 
 
+//I - Interface Segregation Principle (ISP)
+//A class should not be forced to implement interfaces it does not use.
 
-Rectangle c=new Rectangle();
-c.Length=4;
-c.Width=5;
-c.CalulateArea();
+Circle2D c2d= new Circle2D{radius=5};
+Console.WriteLine("Circle ");
+Console.WriteLine(c2d.Area());
+
+Sphere3D s3d= new Sphere3D{radius=6};
+Console.WriteLine("Sphere");
+Console.WriteLine(s3d.Area());
+Console.Write(s3d.Volume());
 
 
 
+
+
+
+
+// //L - Liskov Substitution Principle (LSP)
+
+// // objects of a super class should be replicable with objects of itsd subclass without affecting the correctness of the program
+
+// NewShapes ns= new NewRectangle{Length=5,Width=10};
+// Console.WriteLine(ns.Area);
+
+
+// NewShapes ns1= new NewSquare{SideLength=5};
+
+
+// Console.WriteLine(ns1.Area);
+
+
+
+//O - Open/Closed Principle (OCP)
+//Open for extension and closed for modification
+
+// Rectangle c=new Rectangle();
+// c.Length=4;
+// c.Width=5;
+// c.CalulateArea();
+
+
+
+//S-Single Responsibility Principle (SRP)
 
 // User u=new User();
 // u.UserEmail="intikhabh@gmail.com";
