@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DesignPatternsSolidPriciples.Abstraction;
+using DesignPatternsSolidPriciples.compoition;
 using DesignPatternsSolidPriciples.Coupling;
 using DesignPatternsSolidPriciples.Encapsulation;
 using DesignPatternsSolidPriciples.Inheritance;
@@ -7,13 +8,18 @@ using DesignPatternsSolidPriciples.Polymorphism;
 using System;
 
 
+Console.WriteLine(" ********************** Composition********************");
+NewCar car1= new NewCar();
+car1.StartCar();
 
 
-Console.WriteLine(" ********************** Coupling********************");
 
 
-Order order =new Order(new SmsSender());
-order.PlaceOrder();
+// Console.WriteLine(" ********************** Coupling********************");
+
+
+// Order order =new Order(new EmailSender());
+// order.PlaceOrder();
 
 
 
