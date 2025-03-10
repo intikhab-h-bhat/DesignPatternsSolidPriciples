@@ -1,30 +1,42 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using DesignPatternsSolidPriciples.Abstraction;
+using DesignPatternsSolidPriciples.Coupling;
 using DesignPatternsSolidPriciples.Encapsulation;
 using DesignPatternsSolidPriciples.Inheritance;
 using DesignPatternsSolidPriciples.Polymorphism;
 using System;
 
 
-Console.WriteLine("**************Polymorphism*****************");
 
-//List<Object> shapes = new List<Object>();
-List<Shape> shapes = new List<Shape>();
-shapes.Add(new Square { Name = "Square",Sides=4 });
-shapes.Add(new Line { Name = "Line", Sides = 0 });
 
-foreach(var s in shapes)
-{
-    //if (s is Square)
-    //{
-    //    var sq = new Square();
-    //    sq.ClosedFig();
+Console.WriteLine(" ********************** Coupling********************");
 
-    //}
-    s.ClosedFig();
+
+Order order =new Order(new SmsSender());
+order.PlaceOrder();
+
+
+
+
+// Console.WriteLine("**************Polymorphism*****************");
+
+// //List<Object> shapes = new List<Object>();
+// List<Shape> shapes = new List<Shape>();
+// shapes.Add(new Square { Name = "Square",Sides=4 });
+// shapes.Add(new Line { Name = "Line", Sides = 0 });
+
+// foreach(var s in shapes)
+// {
+//     //if (s is Square)
+//     //{
+//     //    var sq = new Square();
+//     //    sq.ClosedFig();
+
+//     //}
+//     s.ClosedFig();
 
     
-}
+// }
 
 
 
@@ -69,24 +81,24 @@ foreach(var s in shapes)
 
 
 
-//Console.WriteLine("*******************Encapsulation Demo!***************");
+// Console.WriteLine("*******************Encapsulation Demo!***************");
 
-//BadBankAcount ba=new BadBankAcount();
+// BadBankAcount ba=new BadBankAcount();
 
-//ba.balance = 500;
+// ba.balance = 500;
 
-//Console.WriteLine(ba.balance);
-
-
-//BankAccount account=new BankAccount(100);
-
-//Console.WriteLine(account.GetBalance());
+// Console.WriteLine(ba.balance);
 
 
-//account.Deposit(500);
+// BankAccount account=new BankAccount(100);
 
-//Console.WriteLine(account.GetBalance());
+// Console.WriteLine(account.GetBalance());
 
-//account.WithDraw(150);
 
-//Console.WriteLine(account.GetBalance());
+// account.Deposit(500);
+
+// Console.WriteLine(account.GetBalance());
+
+// account.WithDraw(150);
+
+// Console.WriteLine(account.GetBalance());
