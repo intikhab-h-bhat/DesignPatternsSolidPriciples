@@ -6,6 +6,7 @@ using DesignPatternsSolidPriciples.Encapsulation;
 using DesignPatternsSolidPriciples.Inheritance;
 using DesignPatternsSolidPriciples.Polymorphism;
 using DesignPatternsSolidPriciples.SOLID;
+using DesignPatternsSolidPriciples.SOLID.D;
 using DesignPatternsSolidPriciples.SOLID.I;
 using DesignPatternsSolidPriciples.SOLID.L;
 using DesignPatternsSolidPriciples.SOLID.O;
@@ -16,19 +17,28 @@ using System;
 Console.WriteLine("*********************** Solid Principal****************");
 
 
-//I - Interface Segregation Principle (ISP)
-//A class should not be forced to implement interfaces it does not use.
-
-Circle2D c2d= new Circle2D{radius=5};
-Console.WriteLine("Circle ");
-Console.WriteLine(c2d.Area());
-
-Sphere3D s3d= new Sphere3D{radius=6};
-Console.WriteLine("Sphere");
-Console.WriteLine(s3d.Area());
-Console.Write(s3d.Volume());
+// D - Dependency Inversion Principle (DIP)
+//High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
 
+DesignPatternsSolidPriciples.SOLID.D.Car c= new DesignPatternsSolidPriciples.SOLID.D.Car(new CarEngine());
+
+c.Start();
+
+
+
+
+// //I - Interface Segregation Principle (ISP)
+// //A class should not be forced to implement interfaces it does not use.
+
+// Circle2D c2d= new Circle2D{radius=5};
+// Console.WriteLine("Circle ");
+// Console.WriteLine(c2d.Area());
+
+// Sphere3D s3d= new Sphere3D{radius=6};
+// Console.WriteLine("Sphere");
+// Console.WriteLine(s3d.Area());
+// Console.Write(s3d.Volume());
 
 
 
