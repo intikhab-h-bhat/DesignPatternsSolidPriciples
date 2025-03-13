@@ -1,17 +1,17 @@
-
-
 namespace DesignPatternsSolidPriciples.DesignPatterns.CreationalPattern
 {
-public sealed class SingleTon{
+public sealed class LazySingleton{
 
-private static SingleTon stdemo;
+private static LazySingleton stdemo;  //lazy loading
 private static readonly object obj =new object();
 
-private SingleTon()
+
+
+private LazySingleton()
 {
     
 }
-public static SingleTon GetSinobj(){
+public static LazySingleton GetSinobj(){
     
    if(stdemo==null)
     {  
@@ -19,7 +19,7 @@ public static SingleTon GetSinobj(){
 
     if(stdemo==null)
     {
-       return stdemo =new SingleTon();
+       return stdemo =new LazySingleton();
     }
     }
     }
