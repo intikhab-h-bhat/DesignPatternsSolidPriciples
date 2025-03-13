@@ -2,6 +2,7 @@
 using DesignPatternsSolidPriciples.Abstraction;
 using DesignPatternsSolidPriciples.compoition;
 using DesignPatternsSolidPriciples.Coupling;
+using DesignPatternsSolidPriciples.DesignPatterns.CreationalPattern;
 using DesignPatternsSolidPriciples.Encapsulation;
 using DesignPatternsSolidPriciples.Inheritance;
 using DesignPatternsSolidPriciples.Polymorphism;
@@ -12,18 +13,31 @@ using DesignPatternsSolidPriciples.SOLID.L;
 using DesignPatternsSolidPriciples.SOLID.O;
 using System;
 
+Console.WriteLine("**********************************Design Patterns********************************");
+
+SingleTon st1=  SingleTon.GetSinobj();
+st1.PrintDetails("Hello");
+Console.WriteLine(st1.GetHashCode());
+
+SingleTon st2=  SingleTon.GetSinobj();
+st2.PrintDetails("Hello1");
+Console.WriteLine(st2.GetHashCode());
+//st1.PrintDetails();
 
 
-Console.WriteLine("*********************** Solid Principal****************");
+
+
+
+//Console.WriteLine("*********************** Solid Principal****************");
 
 
 // D - Dependency Inversion Principle (DIP)
 //High-level modules should not depend on low-level modules. Both should depend on abstractions.
 
 
-DesignPatternsSolidPriciples.SOLID.D.Car c= new DesignPatternsSolidPriciples.SOLID.D.Car(new CarEngine());
+// DesignPatternsSolidPriciples.SOLID.D.Car c= new DesignPatternsSolidPriciples.SOLID.D.Car(new CarEngine());
 
-c.Start();
+// c.Start();
 
 
 
