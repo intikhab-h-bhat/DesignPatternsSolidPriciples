@@ -1,8 +1,6 @@
 # C# Programming for Beginners
 
-## Course Overview
 
-This beginner-friendly course introduces the fundamentals of C# programming over three sessions. Each session builds upon previous knowledge, taking you from understanding what programming is to creating your own simple applications with classes and objects.
 
 ### Course Structure
 
@@ -2109,54 +2107,6 @@ Create classes for a product inventory system:
 - Methods to add, remove, and update products
 - Calculate total inventory value
 
-## Course Summary
 
-Congratulations on completing the C# Programming for Beginners course! Let's review what you've learned:
 
-### Session 1: Introduction to Programming and C# Basics
-- Understanding programming concepts and C# as a language
-- Setting up your development environment
-- Working with variables, data types, and basic operations
-- Getting input from users and displaying output
 
-### Session 2: Control Flow and Program Logic
-- Making decisions with conditional statements
-- Repeating code with loops
-- Organizing code with methods
-- Working with arrays to store collections of data
-
-### Session 3: Introduction to Object-Oriented Programming
-- Creating and using classes and objects
-- Working with properties and methods
-- Understanding encapsulation
-- Building a simple console application
-
-### Where to Go From Here
-To continue your C# learning journey, consider exploring:
-
-1. **More OOP Concepts**:
-   - Inheritance and polymorphism
-   - Interfaces and abstract classes
-   - Advanced class design
-
-2. **C# Features**:
-   - Exception handling
-   - Collections (Lists, Dictionaries, etc.)
-   - LINQ (Language Integrated Query)
-   - Asynchronous programming
-
-3. **Practical Applications**:
-   - Windows desktop applications with WPF
-   - Web development with ASP.NET
-   - Game development with Unity
-   - Mobile apps with Xamarin
-
-4. **Resources**:
-   - Microsoft's official C# documentation
-   - Online learning platforms (Pluralsight, Udemy, etc.)
-   - Programming communities (Stack Overflow, Reddit)
-   - Open-source projects
-
-Remember that programming is a skill that improves with practice. Try to work on small projects, solve programming challenges, and apply what you've learned to real-world problems.
-
-Happy coding!
